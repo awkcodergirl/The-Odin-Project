@@ -1,2 +1,5 @@
 # The Odin Project
-My repo for The Odin Project practice assignments and projects
+This is my repository to showcase my projects
+
+## HTML & CSS Projects
+- [ ] [Landing Page](https://awkcodergirl.github.io/The-Odin-Project/LandingPage/)
