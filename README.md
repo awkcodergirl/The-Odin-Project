@@ -12,7 +12,7 @@ This is my repository to showcase projects I've done with TOP. There are still p
 - [ ] Etch-a-Sketch
 - [ ] Calculator
 - [ ] Library
-- [ ] Tic Tac Toe
+- [x] Tic Tac Toe
 - [ ] Restaurant Page
 - [ ] Todo List
 - [ ] Weather App
