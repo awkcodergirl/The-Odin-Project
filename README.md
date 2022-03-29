@@ -8,11 +8,11 @@ This is my repository to showcase projects I've done with TOP. There are still p
 - [ ] Admin Dashboard
 
 ## JS Projects
-- [ ] Rock Paper Scissors
+- [x] Rock Paper Scissors
 - [ ] Etch-a-Sketch
 - [ ] Calculator
 - [ ] Library
-- [x] Tic Tac Toe
+- [ ] Tic Tac Toe
 - [ ] Restaurant Page
 - [ ] Todo List
 - [ ] Weather App
