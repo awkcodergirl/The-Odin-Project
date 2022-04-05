@@ -1,4 +1,4 @@
-let computerScore = 0, playerScore = 0, moves = 5;
+let computerScore = 0, playerScore = 0;
 const pbuttons = document.querySelectorAll(".hbtn");
 
 pbuttons.forEach(button => {
@@ -49,7 +49,6 @@ function playRound(playerSelection){
         (playerSelection == "paper" && computerSelection == "scissors") ||
         (playerSelection == "scissors" && computerSelection == "rock")){
             computerScore+=1;     
-            
 
             if (computerScore == 5){
                 result = "Computer Wins!";
@@ -65,12 +64,10 @@ function playRound(playerSelection){
         (playerSelection == "rock" && computerSelection == "scissors")){
             playerScore+=1;  
           
-           
-            
             if (playerScore == 5){
                 result = "Player Wins!";
                 document.querySelector("#humanScore").innerHTML = playerScore;
-                
+
                 disableButtons();
             } else {
                 result = "You Win! " + playerSelection + " beats " + computerSelection; 
@@ -85,10 +82,6 @@ function playRound(playerSelection){
         
         document.querySelector("#result").innerHTML = result;
         return;
-
-}
-
-function playAgain(){
 
 }
 
