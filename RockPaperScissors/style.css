@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px;
+    
+}
+
+#title{
+    text-align: center;
+    font-weight: 700;
+    font-size: xx-large;
+    color: purple;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+}
+
+#cbuttons, #hbuttons {
+    display:flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+#players{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    margin-top : 30px;
+    /* border: 1px solid black; */
+    
+}
+
+#computerpane, #humanpane{
+    border: 1px solid black;
+    margin: 50px;
+    padding: 20px 10px; 
+    text-align: center;
+}
+
+button {
+    background-color: aquamarine;
+    border: none;
+    border-radius:10px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    padding:10px;
+    min-height:30px; 
+    min-width: 120px;
+}
+
+.hbtn:hover {
+    background-color: red;
+    transition: 0.7s;
+}
+
+h2{
+    padding: 0px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+#humanScore, #computerScore{
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+#movesLeft{
+    font-size: 150%;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;     
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#result{
+    /* border: 1px solid black; */
+    margin: 20px;
+    text-align: center;
+    font-size: large;
+}
+
+#playAgain{
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    padding: 0;
+    margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: large;
+    font-weight: 700;
+    
+}

@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>TicTacToe</title>
+        <title>Rock Paper Scissors</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css" href="https://fonts.googleapis.com/css?family=Sofia">
     </head>
 
     <body>
+        <!-- Title of the page -->
+        <div id="title">Rock Paper Scissors</div>
+        
+        <div id="container">
+            <div id="result"></div>
+            <button id="playAgain" onClick="window.location.reload();">Play Again</button>
+        </div>
+
+        <div id="players">
+            <!-- Human -->
+            <div id="humanpane">
+                <h2>Human</h2>
+                <p id="humanScore">0</p>
+                <div id="hbuttons">
+                    <!-- onclick="playerSelection()" -->
+                    <button class = "hbtn" value = "rock"><img src="images/hrock.png" height ="80" width="100"/></button>
+                    <button class = "hbtn" value = "paper"><img src="images/hpaper.png" height ="80" width="100"/></button>
+                    <button class = "hbtn" value = "scissors"><img src="images/hscissors.png" height ="80" width="100"/></button>
+                </div>
+            </div>
+
+            <!-- Computer -->
+            <div id="computerpane">
+                <h2>Computer</h2>
+                <p id="computerScore">0</p>
+
+                <div id="cbuttons">
+                    <button class = "crbtn" value = "rock"><img src="images/crock.png" height ="80" width="100"/></button>
+                    <button class = "cpbtn" value = "paper"><img src="images/cpaper.png" height ="80" width="100"/></button>
+                    <button class = "csbtn" value = "scissors"><img src="images/cscissors.png" height ="80" width="100"/></button>
+                </div>
+            </div>
+        </div>
+
+
+    
+        
+
+
         <script src="javascript.js"></script>
-    </body>
+
+   </body>
 </html>
+
+
+
+
+
+<!-- Score board  -->
+        <!-- <div id="scoreboard">
+            <div id="computerScore">
+                <h2>Computer</h2>
+                <div id="cscore">0</div>
+            </div>
+
+            <div id="humanScore" >
+                <h2>Human</h2>
+                <div id="hscore">0</div>
+            </div>
+        </div> -->
+        
