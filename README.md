@@ -8,7 +8,7 @@ This is my repository to showcase projects I've done with TOP. There are still p
 - [ ] Admin Dashboard
 
 ## JS Projects
-- [x] Rock Paper Scissors
+- [x] [Rock Paper Scissors](https://awkcodergirl.github.io/The-Odin-Project/RockPaperScissors/)
 - [ ] Etch-a-Sketch
 - [ ] Calculator
 - [ ] Library
