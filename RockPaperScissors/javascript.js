@@ -42,8 +42,11 @@ function playRound(playerSelection){
         const computerSelection = computerChoice();
         let result = "";
         
-        console.log("p : ", playerSelection);
-        console.log("c : ", computerSelection);
+        const comp = computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1);
+        const human = playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1);
+
+        console.log("p : ", human);
+        console.log("c : ", comp);
 
         if ((playerSelection == "rock" && computerSelection == "paper") ||
         (playerSelection == "paper" && computerSelection == "scissors") ||
@@ -55,7 +58,7 @@ function playRound(playerSelection){
                 document.querySelector("#computerScore").innerHTML = computerScore;
                 disableButtons();
             } else {
-                result = "You Lose! " + computerSelection + " beats " + playerSelection;
+                result = "You Lose! " + comp + " beats " + human;
                 document.querySelector("#computerScore").innerHTML = computerScore;
             }
         
@@ -70,7 +73,7 @@ function playRound(playerSelection){
 
                 disableButtons();
             } else {
-                result = "You Win! " + playerSelection + " beats " + computerSelection; 
+                result = "You Win! " + human + " beats " + comp; 
                 document.querySelector("#humanScore").innerHTML = playerScore;
             }
         
