@@ -1,27 +1,41 @@
-.outerSquare{
-    /* border: 1px solid #000000; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.gamePad{
     border-radius: 25px;
     box-shadow: 5px 10px rgb(138,40,40);
-    padding: 50px;
     background-color: rgb(199,56,56);
     width: 500px;
-    height: 500px;
+    height: 600px;
 }
 
-.innerSquare{
-    border: 1px solid black;
-    padding: 50px;
-    background-color: white;
-    width: 400px;
-    height: 300px;
+h1{
+    text-align: center;
 }
+
+.screen{
+    background-color: white;
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+}
+
 
 .settings{
-    padding-top: 20px;
+    padding: 10px 15px;
+    margin: auto;
+    margin-top: 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    /* fix the settings pane so it doesn't break when it is resized */
 }
 
 .slider{
@@ -39,6 +53,15 @@
     text-align: center;
     cursor: pointer;
     box-shadow: 5px 10px;
-    /* margin: 4px 2px;
-    padding: 20px; */
+    position: relative;
 }
+
+.colorButton input{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; 
+    opacity: 0;
+    cursor: pointer;
+} 
