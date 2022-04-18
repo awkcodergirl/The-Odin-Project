@@ -9,7 +9,7 @@ This is my repository to showcase projects I've done with TOP. There are still p
 
 ## JS Projects
 - [x] [Rock Paper Scissors](https://awkcodergirl.github.io/The-Odin-Project/RockPaperScissors/)
-- [ ] Etch-a-Sketch
+- [x] [Etch-a-Sketch (Incomplete)](https://awkcodergirl.github.io/The-Odin-Project/Etch-a-Sketch/)
 - [ ] Calculator
 - [ ] Library
 - [ ] Tic Tac Toe
