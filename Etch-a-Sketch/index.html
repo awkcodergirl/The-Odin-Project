@@ -12,18 +12,22 @@
             <div class="screen"></div>
 
             <div class="settings">
-                <button class="resetButton">Reset</button>
-                <div class="resoultionBar">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+
+                <button class="resetButton" onClick="window.location.reload()">Reset</button>
+
+                <div class="resolutionBar">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onchange="changeResolution()">
                 </div>
+
                 <button class="colorButton">Color
-                    <input type="color">
+                    <input class="colorPicker" type="color" onchange="colorPicker()">
                 </button>
+                
             </div>
             
         </div>
 
-
         <script src="script.js"></script>
+
     </body>
 </html>
