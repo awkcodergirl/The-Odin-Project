@@ -17,3 +17,6 @@ This is my repository to showcase projects I've done with [The Odin Project](htt
 - [ ] Weather App
 - [ ] Testing Practice
 - [ ] Battleship
+- [ ] CV Application
+- [ ] Memory Card
+- [ ] Where's Waldo (A Photo Tagging App)
