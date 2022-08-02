@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* forming a grid */
+#form-container{
+    border: 3px solid black;
+    border-radius: 15px;
+    display: inline-grid;
+    grid-template: repeat(7, 65px) / repeat(4, 80px);
+    grid-template-areas: "digits-input digits-input digits-input digits-input"
+    "digits-input digits-input digits-input digits-input"
+    "clear clear delete delete"
+    "number number number number"
+    "number number number number"
+    "number number number number"
+    "number number number number";
+    padding: 20px;
+    gap: 10px;
+    background-color: #B0E1FF;
+    margin: 25px auto;
+}
+
+#digits-input{
+    grid-area: digits-input;
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 90%;
+}
+
+#clear-button{
+    grid-area: clear;
+    background-color: #FFDAF5;
+}
+
+#delete-button{
+    grid-area: delete;
+    background-color: #E6C6FF;
+}
+
+#number{
+    grid-area: number;
+}
+
+button{
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+button:hover{
+    background: #E2E2E2;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 15px;
+    font-size: 10px;
+}
+
+footer p {
+    text-align: center;
+}
