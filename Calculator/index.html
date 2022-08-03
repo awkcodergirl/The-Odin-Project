@@ -7,39 +7,46 @@
     </head>
 
     <body>
-        <form id="form-container">
+
+        <div id="container">
             <!-- Row 1 : Digits input field -->
-            <input type="text" id="digits-input" name="digits-input">
+            <div id="digits-input">
+                <p id="input-history"></p>
+                <p id="input">0</p>
+            </div>
         
             <!-- Row 2 : Clear and Delete Buttons -->
-            <button type="button" id="clear-button">CLEAR</button>
-            <button type="button" id="delete-button">DELETE</button>
+            <button type="button" id="clear-button" class="button clear">CLEAR</button>
+            <button type="button" id="delete-button" class="button delete">DELETE</button>
 
             <!-- Row 3 : numbers with divide sign -->
-            <button type="button" id="number seven">7</button>
-            <button type="button" id="number eight">8</button>
-            <button type="button" id="number nine">9</button>
-            <button type="button" id="number divide">÷</button>
+            <button type="button" id="number seven" class="button digit">7</button>
+            <button type="button" id="number eight" class="button digit">8</button>
+            <button type="button" id="number nine" class="button digit">9</button>
+            <button type="button" id="number divide" class="button symbol">÷</button>
         
             <!-- Row 4 : numbers with multiply sign -->
-            <button type="button" id="number four">4</button>
-            <button type="button" id="number five">5</button>
-            <button type="button" id="number six">6</button>
-            <button type="button" id="number multiply">x</button>
+            <button type="button" id="number four" class="button digit">4</button>
+            <button type="button" id="number five" class="button digit">5</button>
+            <button type="button" id="number six" class="button digit">6</button>
+            <button type="button" id="number multiply" class="button symbol">x</button>
         
             <!-- Row 4 : numbers with subtract sign -->
-            <button type="button" id="number one">1</button>
-            <button type="button" id="number two">2</button>
-            <button type="button" id="number three">3</button>
-            <button type="button" id="number minus">-</button>
+            <button type="button" id="number one" class="button digit">1</button>
+            <button type="button" id="number two" class="button digit">2</button>
+            <button type="button" id="number three" class="button digit">3</button>
+            <button type="button" id="number minus" class="button symbol">-</button>
         
             <!-- Row 4 : dot, zero, equals and plus sign -->
-            <button type="button" id="number dot">.</button>
-            <button type="button" id="number zero">0</button>
-            <button type="button" id="number equals">=</button>
-            <button type="button" id="number plus">+</button>
+            <button type="button" id="number dot" class="button dot">.</button>
+            <button type="button" id="number zero" class="button digit">0</button>
+            <button type="button" id="number equals" class="button equals">=</button>
+            <button type="button" id="number plus" class="button symbol">+</button>
 
-        </form>
+        </div>
+
+        <!-- Linking the JS script -->
+        <script src="script.js"></script>
 
         <footer>
             <p>Created by <a href="https://github.com/awkcodergirl">@awkcodergirl</a> - <a href="https://www.theodinproject.com/">The Odin Project</a></p>
