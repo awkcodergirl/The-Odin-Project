@@ -9,7 +9,7 @@ This is my repository to showcase projects I've done with [The Odin Project](htt
 ## JS Projects
 - [x] [Rock Paper Scissors](https://awkcodergirl.github.io/The-Odin-Project/RockPaperScissors/)
 - [x] [Etch-a-Sketch (Incomplete)](https://awkcodergirl.github.io/The-Odin-Project/Etch-a-Sketch/)
-- [ ] Calculator
+- [x] [Calculator](https://awkcodergirl.github.io/The-Odin-Project/Calculator/)
 - [ ] Library
 - [ ] Tic Tac Toe
 - [ ] Restaurant Page
