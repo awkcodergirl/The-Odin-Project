@@ -2,7 +2,7 @@
 https://awkcodergirl.github.io/The-Odin-Project/Calculator/
 
 ## Project GIF
-
+![Alt Text](https://github.com/awkcodergirl/The-Odin-Project/blob/main/Calculator/gif/CalculatorGIF.gif)
 
 ## Skills Learned
 - The importance of pre-planning my solution
