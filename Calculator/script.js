@@ -47,7 +47,6 @@ function resetScreen(){
 
 function pressOperatorButton(operator){
     if (currentOperator != null){
-        console.log("current op " + currentOperator);
         pressEqualsButton();
     }
 
@@ -58,21 +57,19 @@ function pressOperatorButton(operator){
 }
 
 function pressEqualsButton(){
+    if (operand1 == "" && operand2 == "") {
+        return;
+    }
+
     operand2 = input.textContent;
-    // console.log("op1: " + operand1);
-    // console.log("op2: " + operand2);
     finalResult = operate(currentOperator, operand1, operand2);
-    // console.log("final: " + finalResult);
     inputHistory.textContent = `${operand1} ${currentOperator} ${operand2} =`;
     input.textContent = finalResult;
     currentOperator = null;
 }
 
 function pressDotButton(){
-    // console.log("dot pressed");
-
     if (input.textContent.includes('.')){
-        // console.log("dot here");
         dotButton.disabled = true;
     } else {
         input.textContent += '.';
@@ -81,7 +78,7 @@ function pressDotButton(){
 
 // for clear button
 function pressClearButton(){
-    currentOperator = "";
+    currentOperator = null;
     operand1 = "";
     operand2 = "";
     inputHistory.textContent  = "";
@@ -110,21 +107,26 @@ function multiply(number1, number2){
 }
 
 function operate(operator, number1, number2){
+    let result = 0;
     number1 = parseFloat(number1);
     number2 = parseFloat(number2);
 
     switch (operator) {
         case "+":
-            return add(number1, number2);
+            result = add(number1, number2);
+            return Number.isInteger(result) ? result : result.toFixed(5);
         case "-":
-            return subtract(number1, number2);
+            result = subtract(number1, number2);
+            return Number.isInteger(result) ? result : result.toFixed(5);
         case "x":
-            return multiply(number1, number2);
+            result = multiply(number1, number2);
+            return Number.isInteger(result) ? result : result.toFixed(5);
         case "÷":
           if (number2 === 0){
-            return null
+            return null;
           } else {
-            return divide(number1, number2);
+            result = divide(number1, number2);
+            return Number.isInteger(result) ? result : result.toFixed(5);
           }
     }
 }
