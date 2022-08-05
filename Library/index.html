@@ -10,11 +10,11 @@
         <header>
             <img id="hamburger-menu" src="images/menu.svg">
             <h1 id="name">The Book Club</h1>
-            <!-- <img id="logo" src="images/bookLogo.png"> -->
             <img id="dark-mode" src="images/moon.svg">
         </header>
 
         <div id="side-form">
+            <img id="close-side-form" src="images/x.svg">
             <table id="info-table">
                 <thead>
                     <tr>
@@ -43,43 +43,49 @@
             </table>
         </div>
 
-        <div id="books-list">
-            <table id="books-table">
-                <thead>
-                    <tr>
-                        <th>TITLE</th>
-                        <th>AUTHOR</th>
-                        <th>PAGES</th>
-                        <th>STATUS</th>
-                        <th></th>
-                    </tr>
-                </thead>
+        <div id="main">
+            <div id="books-list">
+                <table id="books-table">
+                    <thead>
+                        <tr>
+                            <th>TITLE</th>
+                            <th>AUTHOR</th>
+                            <th>PAGES</th>
+                            <th>STATUS</th>
+                            <th>DELETE</th>
+                        </tr>
+                    </thead>
 
-                <tbody id="currentBookList">
+                    <tbody id="currentBookList">
 
-                </tbody>
-            </table>
-        </div>
+                    </tbody>
+                </table>
+            </div>
 
-        <div id="add-books-icon">
-            <img id="plus-icon" src="images/plus-circle.svg">
-        </div>
+            <div id="add-books-icon">
+                <img id="plus-icon" src="images/plus-circle.svg">
+            </div>
 
-        <div id="add-books-form">
-            <form>
-                <fieldset id="get-book">
-                    <legend>Add a book</legend>
-                    <input type="text" id="name-of-book" name="name-of-book" placeholder="Title">
-                    <input type="text" id="name-of-author" name="name-of-author" placeholder="Author">
-                    <input type="number" id="number-of-pages" name="number-of-pages" placeholder="Pages">
-                </fieldset>
+            <div id="add-books-form">
+                <form>
+                    <div id="form-heading">
+                        <h3>Add a book</h3>
+                        <img id="cross-icon" src="images/x.svg">
+                    </div>
 
-                <fieldset id="status-check">
-                    <input type="checkbox" id="status-checkbox" name="status-checkbox">
-                    <label for="status-checkbox">I have read this book</label>
-                    <button type="button" id="add-book-button">Add Book</button>
-                </fieldset>
-            </form>
+                    <fieldset id="get-book">
+                        <input type="text" id="name-of-book" name="name-of-book" placeholder="Title">
+                        <input type="text" id="name-of-author" name="name-of-author" placeholder="Author">
+                        <input type="number" id="number-of-pages" name="number-of-pages" placeholder="Pages">
+                    </fieldset>
+
+                    <fieldset id="status-check">
+                        <input type="checkbox" id="status-checkbox" name="status-checkbox">
+                        <label for="status-checkbox">I have read this book</label>
+                        <button type="button" id="add-book-button">Add Book</button>
+                    </fieldset>
+                </form>
+            </div>
         </div>
 
         <script src="script.js"></script>

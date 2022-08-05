@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pacifico&display=swap');
-/* font-family: 'Josefin Sans', sans-serif;
-font-family: 'Pacifico', cursive; */
 
 *{
     box-sizing: border-box;
@@ -9,30 +7,17 @@ font-family: 'Pacifico', cursive; */
 
 header{
     display: flex;
-    border: 1px solid;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 30px;
-}
-
-img{
-    border: 1px solid blue;
+    padding: 40px 0px;
+    margin: 0px;
+    background-image: linear-gradient( 103.3deg,  rgba(252,225,208,1) 30%, rgba(255,173,214,1) 55.7%, rgba(162,186,245,1) 81.8% );
 }
 
 #name{
-    position: absolute;
-    left: 130px;
     font-family: 'Pacifico', cursive;
-    font-size: 36px;
+    font-size: 40px;
 }
-
-/* #logo{
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    left: 100px;
-    top: 5px;
-} */
 
 #hamburger-menu{
     margin-left: 50px;
@@ -40,6 +25,25 @@ img{
 
 #dark-mode{
     margin-right: 50px;
+}
+
+#side-form{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: antiquewhite;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#side-form #close-side-form{
+    position: absolute;
+    top: 56px;
+    margin-left: 50px;
 }
 
 #info-table, #books-table{
@@ -52,26 +56,20 @@ img{
     width: 70%;
     border-collapse: collapse;
     border-spacing: 0;
-    font-size: 24px;
 }
 
 /* makes table more responsive */
-/* #books-list{
+#books-list{
     overflow-x:auto;
-} */
+    margin-top: 50px;
+}
+
+#info-table{
+    margin: 100px auto;
+}
 
 #info-table th{
   padding: 12px;
-}
-
-#books-table{
-    border: 1px solid;
-    text-align: center;
-}
-
-#books-table th{
-    padding: 30px 50px;
-    border: 1px solid blue;
 }
 
 #info-table > thead > tr > th {
@@ -79,50 +77,108 @@ img{
     text-align: center;
 }
 
+#books-table th, #books-table td{
+    padding: 30px 50px;
+}
+
+#books-table th{
+    background-color: #FFDAF5;
+}
+
 #plus-icon{
-    position: absolute;
+    position: fixed;
     right:50px;
     bottom: 50px;
+    cursor: pointer;
+}
+
+#cross-icon{
+    cursor: pointer;
+}
+
+#add-books-form{
+    display: none;
+    position: fixed;
+    width: 500px;
+    height: 200px;
+    top: 40%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -250px;
+    background-color: white;
 }
 
 form{
-    border: 1px solid;
-    width: 30%;
+    border: 15px solid;
+    max-width: 500px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
-    padding: 20px;
+    background-color: white;
+    background: linear-gradient(to top, rgba(#cffffe, 0.3), rgba(#f9f7d9, 0.3), rgba(#fce2ce, 0.3), rgba(#ffc1f3, 0.3));
+    border-color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
+    border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23cffffe' /%3E%3Cstop offset='25%25' stop-color='%23f9f7d9' /%3E%3Cstop offset='50%25' stop-color='%23fce2ce' /%3E%3Cstop offset='100%25' stop-color='%23ffc1f3' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3'/%3E %3C/svg%3E") 1;
 }
 
 fieldset{
     border: none;
 }
 
-legend{
-    float:left;
+#form-heading {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+#form-heading h3{
+    margin-left: 20px;
     font-size: 30px;
+}
+
+#form-heading img{
+    margin-right: 10px;
 }
 
 input[type=text], input[type=number]{
     width: 100%;
-    margin: 30px 0;
-    padding-top: 25px;
+    margin-top: 20px;
+    padding-top: 15px;
     display: inline-block;
     border: none;
     border-bottom: 2px dotted;
 }
 
+input[type=checkbox]{
+    width:20px;
+    height:20px;
+    border-radius:5px;
+    vertical-align:text-top;
+    float: left;
+}
+
+#status-check label{
+    margin-left: 11px;
+}
+
+#name-of-book{
+    margin-top: 10px;
+}
+
 input::placeholder{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
-    color: black;
 }
 
 #add-book-button{
     display: block;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 10px 20px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
-    float: left;
+    margin-left: 0px;
+    background-color: #FDCFD2;    
+    border: 1px solid #FDCFD2;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
