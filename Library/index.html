@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Library</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img id="hamburger-menu" src="images/menu.svg">
+            <h1 id="name">The Book Club</h1>
+            <!-- <img id="logo" src="images/bookLogo.png"> -->
+            <img id="dark-mode" src="images/moon.svg">
+        </header>
+
+        <div id="side-form">
+            <table id="info-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Information</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>Books Read</th>
+                        <th id="read">0</th>
+                    </tr>
+                    
+                    <tr>
+                        <th>Books Unread</th>
+                        <th id="not-read">0</th>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th>Total Books</th>
+                        <th id="total">0</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div id="books-list">
+            <table id="books-table">
+                <thead>
+                    <tr>
+                        <th>TITLE</th>
+                        <th>AUTHOR</th>
+                        <th>PAGES</th>
+                        <th>STATUS</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody id="currentBookList">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div id="add-books-icon">
+            <img id="plus-icon" src="images/plus-circle.svg">
+        </div>
+
+        <div id="add-books-form">
+            <form>
+                <fieldset id="get-book">
+                    <legend>Add a book</legend>
+                    <input type="text" id="name-of-book" name="name-of-book" placeholder="Title">
+                    <input type="text" id="name-of-author" name="name-of-author" placeholder="Author">
+                    <input type="number" id="number-of-pages" name="number-of-pages" placeholder="Pages">
+                </fieldset>
+
+                <fieldset id="status-check">
+                    <input type="checkbox" id="status-checkbox" name="status-checkbox">
+                    <label for="status-checkbox">I have read this book</label>
+                    <button type="button" id="add-book-button">Add Book</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

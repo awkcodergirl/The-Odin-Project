@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pacifico&display=swap');
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Pacifico', cursive; */
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    border: 1px solid;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+
+img{
+    border: 1px solid blue;
+}
+
+#name{
+    position: absolute;
+    left: 130px;
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+}
+
+/* #logo{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 100px;
+    top: 5px;
+} */
+
+#hamburger-menu{
+    margin-left: 50px;
+}
+
+#dark-mode{
+    margin-right: 50px;
+}
+
+#info-table, #books-table{
+    text-align: left;
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#books-table{
+    width: 70%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 24px;
+}
+
+/* makes table more responsive */
+/* #books-list{
+    overflow-x:auto;
+} */
+
+#info-table th{
+  padding: 12px;
+}
+
+#books-table{
+    border: 1px solid;
+    text-align: center;
+}
+
+#books-table th{
+    padding: 30px 50px;
+    border: 1px solid blue;
+}
+
+#info-table > thead > tr > th {
+    border-bottom: 3px dashed #7998EE;
+    text-align: center;
+}
+
+#plus-icon{
+    position: absolute;
+    right:50px;
+    bottom: 50px;
+}
+
+form{
+    border: 1px solid;
+    width: 30%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 20px;
+}
+
+fieldset{
+    border: none;
+}
+
+legend{
+    float:left;
+    font-size: 30px;
+}
+
+input[type=text], input[type=number]{
+    width: 100%;
+    margin: 30px 0;
+    padding-top: 25px;
+    display: inline-block;
+    border: none;
+    border-bottom: 2px dotted;
+}
+
+input::placeholder{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    color: black;
+}
+
+#add-book-button{
+    display: block;
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    float: left;
+}
