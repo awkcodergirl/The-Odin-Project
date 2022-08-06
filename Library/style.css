@@ -40,7 +40,7 @@ header{
 
 #side-form #close-side-form{
     position: absolute;
-    top: 56px;
+    top: 40px;
     margin-left: 50px;
     cursor: pointer;
 }
