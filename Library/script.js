@@ -41,6 +41,7 @@ function addBookToLibrary(){
     // Display in Book List Table
     showBooksInLibrary();
     updateSideCardInfo();
+    resetForm();
 }
 
 
@@ -101,7 +102,6 @@ function showBooksInLibrary(){
 
         currentBookList.appendChild(tr);
     });
-
 }
 
 function deleteBookFromLibrary(binIcon){
@@ -157,6 +157,13 @@ function openForm() {
   
 function closeForm() {
     document.getElementById("add-books-form").style.display = "none";
+}
+
+function resetForm(){
+    title.value = "";
+    author.value = "";
+    pages.value = "";
+    statusCheckbox.checked = false;
 }
 
 function openInfoBar(){
