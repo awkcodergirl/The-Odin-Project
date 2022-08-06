@@ -7,6 +7,9 @@ let openFormButton = document.getElementById("plus-icon");
 let closeFormButton = document.getElementById("cross-icon");
 let openSideBar = document.getElementById("hamburger-menu");
 let closeSideBar = document.getElementById("close-side-form");
+let booksRead = document.getElementById("read");
+let booksNotRead = document.getElementById("not-read");
+let totalBooks = document.getElementById("total");
 let myLibrary = [];
 let titletd = "", authortd = "", pagestd = "", statustd = "", deletetd = "";
 
@@ -39,6 +42,7 @@ function addBookToLibrary(){
 
     // Display in Book List Table
     displayBook();
+    updateSideCardInfo();
 }
 
 
@@ -74,22 +78,42 @@ function displayBook(){
     tr.appendChild(statustd);
 
     // Make delete button for delete column
-    // book.deleteButton = document.createElement("button");
-    // book.deleteButton.innerHTML = "Delete";
     deletetd = document.createElement('td');
     deletetd.className = "deleteButton";
     deletetd.textContent = book.deleteButton;
     tr.appendChild(deletetd);
 
-    deletetd.addEventListener("click", function(e){
-        console.log(e);
-    });
+    // deletetd.addEventListener("click", function(e){
+    //     console.log(e);
+    // });
+
+    statustd.addEventListener("click", changeStatus);
 
     let currentBookList = document.getElementById("currentBookList");
     currentBookList.appendChild(tr);
 }
 
-function deleteBookFromLibrary(){
+// function deleteBookFromLibrary(){
+// }
+
+function updateSideCardInfo(){
+    let read = 0, notRead = 0, total = 0;
+    myLibrary.forEach(function(book){
+        if (book.status == "✔️"){
+            read++;
+        } else if(book.status == "❌"){
+            notRead++;
+        }
+        total++;
+    });
+
+    console.log(`read ${read}`);
+    console.log(`not read ${notRead}`);
+    console.log(`total ${total}`);
+    
+    booksRead.textContent = read;
+    booksNotRead.textContent = notRead;
+    totalBooks.textContent = total;
 }
 
 function openForm() {
@@ -108,4 +132,11 @@ function openInfoBar(){
 function closeInfoBar() {
     document.getElementById("side-form").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
+}
+
+function changeStatus(){
+    console.log("here ❌");
+    if (readStatus = "✔️"){
+        statustd.textContent = "❌";
+    }
 }

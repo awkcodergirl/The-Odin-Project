@@ -21,10 +21,12 @@ header{
 
 #hamburger-menu{
     margin-left: 50px;
+    cursor: pointer;
 }
 
 #dark-mode{
     margin-right: 50px;
+    cursor: pointer;
 }
 
 #side-form{
@@ -34,7 +36,7 @@ header{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: antiquewhite;
+    background-color: #FCE1D0;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -44,6 +46,17 @@ header{
     position: absolute;
     top: 56px;
     margin-left: 50px;
+    cursor: pointer;
+}
+
+#developer-info{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    line-height: 30px;
 }
 
 #info-table, #books-table{
@@ -65,7 +78,7 @@ header{
 }
 
 #info-table{
-    margin: 100px auto;
+    margin: 150px auto;
 }
 
 #info-table th{
