@@ -1,7 +1,8 @@
 ## Demo Link
-
+https://awkcodergirl.github.io/The-Odin-Project/Library/
 
 ## Project GIF
+![Alt Text](https://github.com/awkcodergirl/The-Odin-Project/blob/main/Library/gif/LibraryGIF.gif)
 
 ## Skills Learned
 - Importance of pre-planning the solution
