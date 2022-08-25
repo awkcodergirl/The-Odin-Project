@@ -19,12 +19,12 @@ h1{
     text-shadow: 5px 5px #FC5185;
 }
 
-#playerDetails, #weaponDetails, #playButton{
+#weaponDetails, #playButton{
     text-align: center;
     margin-top: 40px;
 }
 
-#players, #weapons{
+#weapons{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -32,7 +32,7 @@ h1{
     margin-top: 20px;
 }
 
-#computer-btn, #player-btn, #x-btn, #o-btn, #playButton{
+#x-btn, #o-btn, #playButton{
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
@@ -45,17 +45,17 @@ h1{
     width: 60px;
 }
 
-#computer-btn, #x-btn{
+#x-btn{
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(233,209,148,1) 100%);
 }
 
-#player-btn, #o-btn{
+#o-btn{
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,126,29,0.6699054621848739) 50%, rgba(252,176,69,1) 100%);
 }
 
-#player-btn:hover, #computer-btn:hover, #x-btn:hover, #o-btn:hover, .playbtn:hover{
+#x-btn:hover, #o-btn:hover, .playbtn:hover{
     color: black;
 }
 
@@ -64,9 +64,6 @@ h1{
     width: 100px;
     margin: 0 auto;
     margin-top: 40px;
-}
-
-#weaponDetails, #playButton{
     display: none;
 }
 
@@ -110,7 +107,7 @@ p{
     display: flex;
     width:100%;
 	max-width:30%;
-    margin:50px 35%;
+    margin:40px 35%;
     visibility: hidden;
     height: 0px;
 }
@@ -135,11 +132,82 @@ a{
     margin-top: 0px;
 }
 
+footer{
+    display: none;
+    margin-top: 40px;
+}
 
-/* footer{
-    position: absolute;
-    bottom: 0;
-} */
-/* footer p{
-    margin: 0px auto 20px auto; 
-} */
+footer a{
+    color: #364F6B;
+}
+
+@media (max-width:1060px) {
+    *{
+        font-size: 80px;
+    }
+
+    h1{
+        font-size: 150px;
+    }
+
+    #weapons{
+        margin-top: 50px;
+    }
+
+    #weapons a{
+        font-size: 80px;
+        text-align: center;
+        height: 120px;
+        width: 120px;
+    }
+
+    #playButton{
+        width: 250px;
+        margin-top: 50px;
+    }
+
+    #score-board{
+        max-width: 100%;
+        margin-top: 50px;
+    }
+
+    #score-board h3{
+        font-size: 50px;
+    }
+
+    #game-container{
+        grid-template-rows: repeat(3, 250px);
+        grid-template-columns: repeat(3, 250px);
+    }
+
+    #final-container{
+        max-width: 100%;
+        margin: 50px auto;
+    }
+
+    #restart-button{
+        width: 35%;
+        font-size: 60px;
+        margin-left: 100px;
+    }
+
+    #restart-icon{
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+    }
+
+    #final-container p{
+        font-size: 50px;
+        margin-right: 100px;
+    }
+
+    footer{
+        margin: 0px 100px;
+    }
+
+    footer *{
+        font-size: 45px;
+        text-align: left;
+    }
+}

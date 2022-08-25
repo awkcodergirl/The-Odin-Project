@@ -22,7 +22,7 @@ let gameBoard = (function(){
 
                 cellNumber = parseInt(e.target.classList[1]);
                 
-                if (!board.includes(null) || winnerFound){
+                if (board[cellNumber] !== null || winnerFound){
                     return;
                 } 
 
@@ -128,23 +128,10 @@ let gameBoard = (function(){
 
 // Here playerType -> my oponent
 // symbol -> my weapon
-function createPlayer(playerType, symbol) {
+function createPlayer(symbol) {
     
     return {
-        playerType: playerType,
         symbol: symbol,
-
-        // If the playerType is "Player", then I'm playing with "Player 2"
-        // If the playerType is "Computer", then I'm playing with "Computer"
-        setPlayer (){
-            let opponent = document.getElementById("oponentType");
-
-            if (playerType === "Player"){
-                opponent.textContent = "PLAYER 2";
-            } else if (playerType === "Computer"){
-                opponent.textContent = "COMPUTER";
-            }
-        },
 
         getPlayer(){
             return this;
@@ -176,27 +163,20 @@ function createPlayer(playerType, symbol) {
 // And call the appropriate functions in response
 function detectClicks(){
 
-    let oponent = '', weapon = '';
+    let weapon = '';
     let player, score;
 
     document.addEventListener("click", (event) => {
         const {target} = event;
 
-        if (target.id === "player-btn"){
-            oponent = "Player";
-            showWeapons();
-        } else if (target.id === "computer-btn"){
-            oponent = "Computer";
-            showWeapons();
-        } else if (target.id === "x-btn"){
+        if (target.id === "x-btn"){
             weapon = "X";
             showPlay();
         } else if (target.id === "o-btn"){
             weapon = "O";
             showPlay();
         } else if (target.classList.contains("playbtn")){
-            player = createPlayer(oponent, weapon);
-            player.setPlayer();
+            player = createPlayer(weapon);
             showGame();
         } else if (target.id === "restart-button"){
             score = gameBoard.restartGame();
@@ -217,13 +197,12 @@ function showPlay(){
 
 function showGame(){
     let weaponDetails = document.getElementById("weaponDetails");
-    let playerDetails = document.getElementById("playerDetails");
     let score_board = document.getElementById("score-board");
     let game_container = document.getElementById("game-container");
     let playButton = document.getElementById("playButton");
     let finalContainer = document.getElementById("final-container");
+    let developerInfo = document.getElementById("developer-info");
 
-    playerDetails.style.display = "none";
     weaponDetails.style.display = "none";
     playButton.style.display = "none";
     score_board.style.visibility = "visible";
@@ -232,6 +211,7 @@ function showGame(){
     game_container.style.height = "auto";
     finalContainer.style.visibility = "visible";
     finalContainer.style.height = "auto";
+    developerInfo.style.display = "block";
 }
 
 detectClicks();
