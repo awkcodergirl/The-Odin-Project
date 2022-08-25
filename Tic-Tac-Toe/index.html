@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Tic Tac Toe</title>
         <link href="style.css" rel="stylesheet">
+        <link href="images/icon.png" rel="icon">
     </head>
 
     <body>
@@ -11,47 +12,72 @@
             <h1>Tic Tac Toe</h1>
         </header>
 
+        <div id="playerDetails">
+            <h3>Choose your oponent</h3>
+            
+            <div id="players">
+                <a href="#" id="computer-btn">Computer <span>🤖</span></a>
+                <a href="#" id="player-btn">Player 2 <span>🙋</span></a>
+            </div>
+        </div>
+
+        <div id="weaponDetails">
+            <h3>Choose your weapon</h3>
+
+            <div id="weapons">
+                <a href="#" id="x-btn">X</a>
+                <a href="#" id="o-btn">O</a>
+            </div>
+        </div>
+
+        <div id="playButton" class="playbtn">
+            <a href="#" class="playbtn">Play</a>
+        </div>
+
         <div id="score-board">
             <div id="player">
-                <h3>PLAYER</h3>
-                <p class="player-score">0</p>
+                <h3>PLAYER 1</h3>
+                <p id="player-score">0</p>
             </div>
 
-            <div id="computer">
-                <h3>COMPUTER</h3>
-                <p class="computer-score">0</p>
+            <div id="oponent">
+                <h3 id="oponentType"></h3>
+                <p id="oponent-score">0</p>
             </div>
 
             <div id="draw">
                 <h3>DRAW</h3>
-                <p class="draw-score">0</p>
+                <p id="draw-score">0</p>
             </div>
         </div>
 
         <div id="game-container">
             <!-- Row 1 -->
-            <div class="one"></div>
-            <div class="two"></div>
-            <div class="three"></div>
+            <div class="cell 0"></div>
+            <div class="cell 1"></div>
+            <div class="cell 2"></div>
             
             <!-- Row 2 -->
-            <div class="four"></div>
-            <div class="five"></div>
-            <div class="six"></div>
+            <div class="cell 3"></div>
+            <div class="cell 4"></div>
+            <div class="cell 5"></div>
 
             <!-- Row 3 -->
-            <div class="seven"></div>
-            <div class="eight"></div>
-            <div class="nine"></div>
-
-            <div id="restart-btn">
-                <a href="#" class="button">Restart</a>
-                <img id="restart-icon" src="images/rotate-cw.svg">
-            </div>
+            <div class="cell 6"></div>
+            <div class="cell 7"></div>
+            <div class="cell 8"></div>
+            
         </div>
 
-        <footer id="developer-info">
+        <div id="final-container">
+            <a href="#" id="restart-button">Restart <img id="restart-icon" src="images/rotate-cw.svg"></a>
+            <p id="statement"></p>
+        </div>
+
+        <!-- <footer id="developer-info">
             <p>Created with ❤️ by <a href="https://github.com/awkcodergirl">@awkcodergirl</a> - <a href="https://www.theodinproject.com/">The Odin Project</a></p> 
-        </footer>
+        </footer> -->
+
+        <script src="script.js"></script>
     </body>
 </html>

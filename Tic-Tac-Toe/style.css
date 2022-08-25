@@ -19,11 +19,64 @@ h1{
     text-shadow: 5px 5px #FC5185;
 }
 
+#playerDetails, #weaponDetails, #playButton{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#players, #weapons{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+#computer-btn, #player-btn, #x-btn, #o-btn, #playButton{
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#weapons a{
+    font-size: 30px;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+}
+
+#computer-btn, #x-btn{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(233,209,148,1) 100%);
+}
+
+#player-btn, #o-btn{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,126,29,0.6699054621848739) 50%, rgba(252,176,69,1) 100%);
+}
+
+#player-btn:hover, #computer-btn:hover, #x-btn:hover, #o-btn:hover, .playbtn:hover{
+    color: black;
+}
+
+#playButton{
+    background-color: #FC5185;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#weaponDetails, #playButton{
+    display: none;
+}
+
 #score-board{
     display: flex;
     justify-content: space-around;
     margin: 30px auto 0px auto;
     max-width: 500px;
+    visibility: hidden;
+    height: 0px;
 }
 
 p{
@@ -39,31 +92,54 @@ p{
     grid-template-columns: repeat(3, 130px);
     margin: 0px 150px; 
     justify-content: center;
+    visibility: hidden;
+    height: 0px;
 }
 
-#game-container > div:not(:last-child){
+#game-container > div{
     border: none;
     background-color: #FC5185;
     cursor: pointer;
 }
 
-#restart-btn{
-    background-color: #364F6B;
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    gap: 5px;
-    cursor: pointer;
-    margin-top: 50px;
+#game-container .cell:hover{
+    background-color: #EACC9D;
 }
 
-#restart-btn a{
+#final-container{
+    display: flex;
+    width:100%;
+	max-width:30%;
+    margin:50px 35%;
+    visibility: hidden;
+    height: 0px;
+}
+
+#restart-button{
+    background-color: #364F6B;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#statement{
+    margin-left: auto;    
+}
+
+#restart-icon{
+    vertical-align: middle;
+} 
+
+a{
     text-decoration: none;
     color: white;
     margin-top: 0px;
 }
 
-footer p{
+
+/* footer{
+    position: absolute;
+    bottom: 0;
+} */
+/* footer p{
     margin: 0px auto 20px auto; 
-}
+} */
