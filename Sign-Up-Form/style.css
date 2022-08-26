@@ -24,6 +24,14 @@
     margin: 30px auto;
 }
 
+#intro h3:last-child{
+    margin-bottom: 0px;
+}
+
+form h3{
+    margin-top: 0px;
+}
+
 form{
     font-family: 'DM Sans', sans-serif;
     padding: 20px 50px;
