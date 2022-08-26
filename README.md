@@ -3,7 +3,7 @@ This is my repository to showcase projects I've done with [The Odin Project](htt
 
 ## HTML & CSS Projects
 - [x] Landing Page ([Demo](https://awkcodergirl.github.io/The-Odin-Project/LandingPage/) | [Repo](https://github.com/awkcodergirl/The-Odin-Project/tree/main/LandingPage))
-- [ ] Signup Form
+- [x] Signup Form ([Demo](https://awkcodergirl.github.io/The-Odin-Project/Sign-Up-Form/) | [Repo](https://github.com/awkcodergirl/The-Odin-Project/tree/main/Sign-Up-Form))
 - [ ] Admin Dashboard
 
 ## JS Projects
