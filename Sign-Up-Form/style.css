@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#container{
+    display: flex;
+}
+
+#right-container{
+    /* width: 60%; */
+}
+
+#left-container{
+    /* width: 40%; */
+}
+
+#cover{
+    /* height: 46%; */
+    width: 500px;
+}
+
+#right-container h3{
+    font-family: 'Lora', serif;
+    font-size: 30px;
+}
+
+#intro{
+    padding: 20px 50px;
+}
+
+#intro h3{
+    margin: 30px auto;
+}
+
+form{
+    font-family: 'DM Sans', sans-serif;
+    padding: 20px 50px;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=password]{
+    display: block;
+    padding: 8px 12px;
+    width: 150%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    font-size: 18px;
+    font-weight: 700;
+    width: 25%;
+    background-color: #FFAFA3;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form label{
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.form-div{
+    display: flex;
+    gap: 30%;
+    margin: 30px auto;
+}
+
+#log-in{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    padding: 20px 50px;
+}
+
+#logo{
+    position: absolute;
+    top: 250px;
+    background: rgba(204, 204, 204, 0.5);
+    width: 500px;
+    text-align: center;
+}
+
+#logo h1, #logo p{
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+#logo p{
+    font-size: 24px;
+}
+
+#logo h1{
+    font-size: 60px;
+}
+
+#cover-owner{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 110%;
+    left: 10%;
+}
+
+footer{
+    font-size: 20px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
