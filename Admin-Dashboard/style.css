@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: 'Oswald', sans-serif;
+}
+
+#side-links-container{
+    padding: 20px 30px;
+    background-color: #022E57;
+}
+
+#primary-links a, #secondary-links a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+#primary-links{
+    margin-bottom: 50px;
+}
+
+#side-links-container h1{
+    margin-bottom: 40px;
+    color: white;
+    display: inline-block;
+    font-size: 35px;
+}
+
+.svg{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    vertical-align: bottom;
+    filter: invert(100%) sepia(0%) saturate(21%) hue-rotate(46deg) brightness(105%) contrast(100%);
+}
+
+.link{
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+#side-links-container a:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.2em    
+}
+
+#logo{
+    margin-right: 15px;
+    vertical-align:top;
+}
+
+header{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+header div{
+    border: 1px solid black;
+}
+
+#search-bar-container input[type=text]{
+    border-radius: 10px;
+    width: 50%;
+    border: none;
+    background-color: #E4DDF4;
+}
+
+#search-bar-container, #profile-info-container, #user-picture, #buttons-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#buttons-container button{
+    background-color: #FF96AD;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+}
+
+#profile-info-container{
+    justify-content: flex-end;
+}
+
+header .svg{
+    filter: invert(0%) sepia(89%) saturate(22%) hue-rotate(126deg) brightness(98%) contrast(95%);
+    margin-right: 0px;
+}
+
+#profile-info-container #profile-pic{
+    width: 60px;
+    height: 60px;
+    border-radius:50%;
+}
+
+#welcome-container #profile-pic{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+}
