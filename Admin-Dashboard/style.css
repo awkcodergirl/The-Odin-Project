@@ -108,3 +108,40 @@ header .svg{
     height: 100px;
     border-radius:50%;
 }
+
+#projects-container{
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    gap: 30px;
+    background-color: #E2E8F0;
+}
+
+.card{
+    position: relative;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    border-left: 15px solid #FCF69C;
+}
+
+.card h3{
+    font-size: 27px;
+}
+
+.card p{
+    font-size: 18px;
+}
+
+#icons{
+    display:flex;
+    justify-content: flex-end;
+    gap: 20px;
+    filter: invert(14%) sepia(36%) saturate(3%) hue-rotate(6deg) brightness(95%) contrast(83%);
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    padding: 25px;
+}
