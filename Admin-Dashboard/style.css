@@ -7,7 +7,7 @@
 }
 
 #side-links-container{
-    padding: 20px 30px;
+    padding: 35px 30px;
     background-color: #022E57;
     grid-area: links;
 }
@@ -122,10 +122,10 @@ main{
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-areas: "projects projects projects announcements"
     "projects projects projects trending";
-    padding-top: 70px;
-    padding-bottom: 20px;
+    padding: 70px 30px 20px 30px;
     background-color: #E2E8F0;
     grid-area: main;
+    position:relative;
 }
 
 #projects-container{
@@ -136,7 +136,7 @@ main{
     justify-content: center;
     grid-area: projects;
     margin: 0px 20px;
-    row-gap: 20px;
+    row-gap: 50px;
 }
 
 .card{
@@ -173,7 +173,7 @@ main{
 #announcements-container{
     grid-area: announcements;
     background-color: white;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     border-radius: 10px;
     padding: 20px;
 }
@@ -224,4 +224,21 @@ footer{
     text-align: center;
     margin: 40px auto;
     text-align: center;
+}
+
+.main-heading{
+    font-size: 24px;
+    top: 30px;
+    position: absolute;
+}
+
+.middle{
+    right: 90px;
+}
+
+.last-main-heading{
+    font-size: 24px;
+    position: absolute;
+    bottom: 440px;
+    right: 170px;
 }
