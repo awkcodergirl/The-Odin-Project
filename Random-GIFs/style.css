@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Alatsi', sans-serif;
+    text-align: center;
+    color: #323232;
+}
+
+body{
+    background: rgb(242,243,226);
+    background: linear-gradient(90deg, rgba(242,243,226,1) 0%, rgba(178,229,248,1) 35%, rgba(244,179,239,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+h1{
+    letter-spacing: 5px;
+    word-spacing: 9px;
+    font-size: 60px;
+}
+
+form *{
+    background: rgba(256,256,256, 0.3);
+}
+
+form *:not(:last-child){
+    margin-right: 10px;
+}
+
+input[type=text], button{
+    text-align: left;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 24px;
+    border: 1px solid white;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+#giphy-container{
+    margin-top: 50px;
+}
+
+footer{
+    margin-top: auto;
+    font-size: 20px;
+}
+
+footer a{
+    color: #6157FF;
+}
