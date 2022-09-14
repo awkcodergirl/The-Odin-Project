@@ -11,6 +11,7 @@ This is my repository to showcase projects I've done with [The Odin Project](htt
 - [x] Library ([Demo](https://awkcodergirl.github.io/The-Odin-Project/Library/) | [Repo](https://github.com/awkcodergirl/The-Odin-Project/tree/main/Library))
 - [x] Tic Tac Toe ([Demo](https://awkcodergirl.github.io/The-Odin-Project/Tic-Tac-Toe/) | [Repo](https://github.com/awkcodergirl/The-Odin-Project/tree/main/Tic-Tac-Toe))
 - [x] Rock Paper Scissors ([Demo](https://awkcodergirl.github.io/The-Odin-Project/RockPaperScissors/) | [Repo](https://github.com/awkcodergirl/The-Odin-Project/tree/main/RockPaperScissors))
+- [x] Random GIFs ([Demo](https://awkcodergirl.github.io/The-Odin-Project/Random-GIFs/) | [Repo](https://github.com/awkcodergirl/The-Odin-Project/tree/main/Random-GIFs))
 - [ ] Etch-a-Sketch
 - [ ] Restaurant Page
 - [ ] Todo List
